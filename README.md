@@ -27,27 +27,39 @@ In addition, we can calculate the correlation matrix of the data, in case that t
 
 ● Residuals: Here you can see the summary of the residuals, the error between the prediction of the model and actual results.
 The smaller the waste, the better.
+
 ● Coefficients: For each independent variable and the intercept we have:
+
 ○ Estimate: Estimated. This is the value of the 𝛽𝑗
+
 ○ Std. Error: Standard Error. It gives us the precision of the estimator. Useful for calculating the t-value.
+
 ○ t-value and Pr(>[t]): It is really important since it is a way to measure if the variable in question or the intercept contribute something
 significant to the model. The t-value is calculated by dividing the coefficient by the standard error and then is used to pose a hypothesis test
 where it measures whether the coefficient is different from 0. If it is not significant, then the coefficient is not contributing
 nothing to the model so the variable could be removed, and this is one of the ways to remove variables from the model. For Pr(>[t]) to be significant
 it has to be less than 0.05.
+
 ● Performance Measures: As the name indicates, they show how good the line is of regression.
+
 ○ Residual Standard Error: Standard error of the residuals The smaller the better.
+
 ○ Multiple / Adjusted R-Square: When we work with a single variable independent does not matter the distinction between the R-square or R-square. Is
 measure tells us the amount of variation explained in the model. The R-squared adjusted takes into account the number of independent variables,
 therefore it is the most used in multiple regression. The closer this value is to one, the it will be better. If it is below 0.70 then the model is very bad,
 which meets our model.
+
 ○ F-Statistic: The F test says if at least one of the 𝛽𝑗 is significantly different from zero. This is a global hypothesis test to be able to assess the
 model. If the p-value is not significant (that is, it is greater than 0.05) then our model is not doing anything. It gives us a value of 4.883e-09, so
 it is very significant.
 
 # Analyzing the Residues
 In general we have to analyze four issues regarding waste.
+
 ● The mean of the errors is zero and the sum of the errors is zero
+
 ● Errors have normal distribution
+
 ● Errors are independent
+
 ● The variance of the errors is constant (Homoscedasticity)
