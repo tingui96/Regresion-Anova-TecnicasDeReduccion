@@ -1,4 +1,4 @@
-# Regresion-Anova-TecnicasDeReduccion
+# Regression-Anova-Reduction Techniques
 
 In this research project we aim to put into practice knowledge
 learned during the statistics course. For this we use linear regression techniques.
